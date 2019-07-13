@@ -62,3 +62,20 @@ function getOperand(operand) {
     }
 
 }
+
+function backspace() {
+    var input_var = document.getElementById('input');
+    var x = input_var.value;
+    if (x.length > 0) {
+        x = x.substring(0, x.length-1);
+        input_var.value = x;
+    }
+
+}
+
+function compute() {
+    var input_var = document.getElementById('input');
+    ans = Math.floor(+eval(input_var.value));
+    document.getElementById('answer').value = '=' + ans;
+
+}
