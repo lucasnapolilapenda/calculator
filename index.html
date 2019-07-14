@@ -7,14 +7,16 @@
 </head>
 <body>
     <section class = "calContainer">
+        <div class = navcont>
         <div class="navbar">
-            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Red </a>
-            <a href="favorite.html"><i class="fa fa-fw fa-heart"></i> Orange</a>
-            <a href="favorite.html"><i class="fa fa-fw fa-heart"></i> Yellow</a>
-            <a href="favorite.html"><i class="fa fa-fw fa-heart"></i> Green</a>
-            <a href="favorite.html"><i class="fa fa-fw fa-heart"></i> Blue</a>
-            <a href="favorite.html"><i class="fa fa-fw fa-heart"></i> Indigo</a>
-            <a href="favorite.html"><i class="fa fa-fw fa-heart"></i> Violet</a>
+            <a style = "background: #ff6d72">Red</a>
+            <a style = "background: #ffc84f">Yellow</a>
+            <a style = "background: #ffc42e" >Orange</a>
+            <a style = "background: #4d8053">Green</a>
+            <a style = "background: #525cff">Blue</a>
+            <a style = "background: #644a82">Violet</a>
+            <a style = "background: #ee92ea">Indigo</a>
+        </div>
         </div>
         <table>
     <! -- Calculator head -->
@@ -27,10 +29,10 @@
     <! -- buttons section of the calculator -->
             <tr>
                 <td>
-                    <input type="button" value=" CE " onclick="clearScreen()" style="color: white; background: red;">
+                    <input type="button" value=" CE " onclick="clearScreen()" style="color: white; background: #ff6d72;">
                     <input type="button" value=" &#247;" onclick="getOperand('/')">
                     <input type="button" value="x" onclick="getOperand('x')">
-                    <input type="button" value="&#8592;" onclick="backspace()" style="color: red;">
+                    <input type="button" value="&#8592;" onclick="backspace()" style="color: #ff6d72;">
                     <br>
                     <input type="button" value="1" onclick="getNumber(1)">
                     <input type="button" value="2" onclick="getNumber(2)">
