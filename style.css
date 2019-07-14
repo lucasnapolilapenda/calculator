@@ -1,3 +1,10 @@
+
+.calContainer {
+    margin-left: 40%;
+    background: orangered;
+}
+
+
 table {
     width: 310px;
     margin: 50px auto;
@@ -47,4 +54,41 @@ input[type=button]:hover {
     background: #cbcbcb;
     cursor: pointer;
 }
+
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+/* Navigation links */
+
+* {
+    box-sizing: border-box;
+}
+.navbar a {
+
+    float: left;
+    width: 14.28%;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+
+
 
