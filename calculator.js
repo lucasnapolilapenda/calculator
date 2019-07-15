@@ -1,5 +1,6 @@
 function getNumber(num) {
     var input_var = document.getElementById('input');
+    shaking.shaking.call();
     switch (num) {
         case 1:
             input_var.value += '1';
@@ -39,13 +40,12 @@ function getNumber(num) {
 
 function clearScreen() {
     document.getElementById('input').value = "";
-    document.getElementById('answer').value = "";
 
 }
 
-
 function getOperand(operand) {
     var input_var = document.getElementById('input');
+    shaking.shaking.call();
     switch (operand) {
         case '+':
             input_var.value += '+';
@@ -73,14 +73,11 @@ function compute() {
 
 }
 
-var i = 0;
-function getBrackets () {
-    var input_var = document.getElementById('input')
-    if (i == 0) {
-        input_var.value += '(';
-        i = 1;
-    }else if (i == 1) {
-        input_var.value += ')';
-        i = 0
+var shaking = {
+    shaking: function trigger() {
+        input_var = document.getElementById('input');
+        if (input_var.value.length === 15) {
+            alert('Too many numbers, clear and start again')
+        }
     }
-}
+};
