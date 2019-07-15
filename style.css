@@ -4,6 +4,7 @@ html, body{
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     color: black;
+    background-color: #0a1e09;
 }
 
 p, label{
@@ -130,7 +131,7 @@ a:hover {
 }
 
 .navcont {
-    background-color: white;
+    background-color: #0a1e09;
 }
 
 
