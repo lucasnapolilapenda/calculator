@@ -1,4 +1,8 @@
 
 function backgroundColor(element, color) {
-    document.getElementById("calContainer").style.background = color
+
+    opacity = "50%";
+    document.getElementById("calContainer").style.background = color;
+    document.getElementById("calContainer").style.opacity = opacity;
 }
+
