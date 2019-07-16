@@ -1,5 +1,5 @@
 function getNumber(num) {
-    var input_var = document.getElementById('input');
+    const input_var = document.getElementById('input');
     trigger.call();
     switch (num) {
         case 1:
@@ -44,7 +44,7 @@ function clearScreen() {
 }
 
 function getOperand(operand) {
-    var input_var = document.getElementById('input');
+    const input_var = document.getElementById('input');
     trigger.call();
     switch (operand) {
         case '+':
@@ -67,14 +67,14 @@ function getOperand(operand) {
 }
 
 function compute() {
-    var input_var = document.getElementById('input');
-    ans = eval(input_var.value);
+    const input_var = document.getElementById('input');
+    let ans = eval(input_var.value);
     document.getElementById('input').value =  ans.toFixed(2);
 
 }
 
 function trigger() {
-        input_var = document.getElementById('input');
+    let input_var = document.getElementById('input');
         if (input_var.value.length === 15) {
             document.getElementById("calContainer").classList.add('apply-shake');
             setTimeout( function() { alert('No more space...'); } , 500)

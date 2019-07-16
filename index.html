@@ -23,13 +23,13 @@
     <! -- Calculator head -->
             <tr>
                 <td>
-                    <input style="color: whitesmoke" type="text" id="input" placeholder="0" readonly="readonly">
+                    <label for="input"></label><input style="color: whitesmoke" type="text" id="input" placeholder="0" readonly="readonly">
                 </td>
             </tr>
     <! -- buttons section of the calculator -->
             <tr>
                 <td>
-                    <input type="button" value=" Clear " onclick="clearScreen()" style="width: 198px; color: white; background: darkslategray; margin-top: 0px">
+                    <input type="button" value=" Clear " onclick="clearScreen()" style="width: 198px; color: white; background: darkslategray; margin-top: 0">
                     <input type="button" value="/" onclick="getOperand('/')" style= "background: darkslategray; margin-top: 0">
                     <br>
                     <input type="button" value="7" onclick="getNumber(7)">
@@ -51,11 +51,9 @@
                     <input type="button" value="." onclick="getNumber('.')">
                     <input type="button" value="=" onclick="compute()">
                     <input type="button" value="%" onclick="getOperand('%')" style= "background: darkslategray;">
-
                     <br>
                 </td>
             </tr>
         </table>
     </section>
 </body>
-</html>

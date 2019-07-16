@@ -17,8 +17,7 @@ p, label{
     background: #ff464a;
     position: relative;
     width: 60%;
-    margin: auto;
-    margin-top: 40px;
+    margin: 40px auto auto;
     -moz-transition: background-color 300ms ;
     -webkit-transition: background-color 300ms;
 }
@@ -129,9 +128,8 @@ input[type=button]:hover {
     font-weight: bold;
     color: whitesmoke;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    padding-bottom: 20px;
+    padding: 14px 16px 20px;
     margin-top: 10px;
     -moz-transition: height 120ms, margin-top 120ms;
     -webkit-transition: height 120ms, margin-top 120ms;
@@ -148,7 +146,7 @@ input[type=button]:hover {
 
 /* Add a red background color to navigation links on hover */
 a:hover {
-    margin-top: 0px;
+    margin-top: 0;
     height: 60px;
     text-decoration: none;
 
