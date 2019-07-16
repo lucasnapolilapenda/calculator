@@ -14,13 +14,13 @@ p, label{
 
 
 .calContainer {
-    background: orangered;
+    background: #ff464a;
     position: relative;
     width: 60%;
     margin: auto;
     margin-top: 40px;
-    -moz-transition: background-color 180ms ;
-    -webkit-transition: background-color 180ms;
+    -moz-transition: background-color 300ms ;
+    -webkit-transition: background-color 300ms;
 }
 
 
@@ -40,7 +40,9 @@ p, label{
 
 .apply-shake {
     animation: shake 0.5s;
-    animation-iteration-count: initial;
+    -moz-animation-name: shake;
+    -webkit-animation-name: shake;
+    animation-play-state: running;
 }
 
 /* table: calculator display */

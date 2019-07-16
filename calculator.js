@@ -76,14 +76,15 @@ function compute() {
 function trigger() {
         input_var = document.getElementById('input');
         if (input_var.value.length === 15) {
-            myMove.call();
+            document.getElementById("calContainer").classList.add('apply-shake');
+            setTimeout( function() { alert('No more space...'); } , 500)
+        } else {
+            document.getElementById("calContainer").classList.remove('apply-shake');
         }
 }
 
 
-
-function myMove() {
-    var elem = document.getElementById("calContainer");
-    elem.classList.add("apply-shake");
-
+function backgroundColor(element, color) {
+    document.getElementById("calContainer").style.background = color;
 }
+
