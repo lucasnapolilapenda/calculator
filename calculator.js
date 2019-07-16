@@ -1,6 +1,6 @@
 function getNumber(num) {
     var input_var = document.getElementById('input');
-    shaking.shaking.call();
+    trigger.call();
     switch (num) {
         case 1:
             input_var.value += '1';
@@ -45,7 +45,7 @@ function clearScreen() {
 
 function getOperand(operand) {
     var input_var = document.getElementById('input');
-    shaking.shaking.call();
+    trigger.call();
     switch (operand) {
         case '+':
             input_var.value += '+';
@@ -73,11 +73,17 @@ function compute() {
 
 }
 
-var shaking = {
-    shaking: function trigger() {
+function trigger() {
         input_var = document.getElementById('input');
         if (input_var.value.length === 15) {
-            alert('Too many numbers, clear and start again')
+            myMove.call();
         }
-    }
-};
+}
+
+
+
+function myMove() {
+    var elem = document.getElementById("calContainer");
+    elem.classList.add("apply-shake");
+
+}
