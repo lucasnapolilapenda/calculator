@@ -33,7 +33,11 @@ function getNumber(num) {
             input_var.value += '0';
             break;
         case '.':
-            input_var.value += '.';
+            if (document.getElementById('input').value.indexOf('.')>-1) {
+                input_var.value += '';
+            } else {
+                input_var.value += '.';
+            }
             break;
     }
 }
