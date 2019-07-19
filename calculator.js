@@ -52,19 +52,39 @@ function getOperand(operand) {
     trigger.call();
     switch (operand) {
         case '+':
-            input_var.value += '+';
+            if (document.getElementById('input').value.indexOf('+')>-1) {
+                input_var.value += '';
+            } else {
+                input_var.value += '+';
+            }
             break;
         case '-':
-            input_var.value += '-';
+            if (document.getElementById('input').value.indexOf('-')>-1) {
+                input_var.value += '';
+            } else {
+                input_var.value += '-';
+            }
             break;
         case 'x':
-            input_var.value += '*';
+            if (document.getElementById('input').value.indexOf('*')>-1) {
+                input_var.value += '';
+            } else {
+                input_var.value += '*';
+            }
             break;
         case '/':
-            input_var.value += '/';
+            if (document.getElementById('input').value.indexOf('/')>-1) {
+                input_var.value += '';
+            } else {
+                input_var.value += '/';
+            }
             break;
         case '%':
-            input_var.value += '%';
+            if (document.getElementById('input').value.indexOf('%')>-1) {
+                input_var.value += '';
+            } else {
+                input_var.value += '%';
+            }
             break;
     }
 
